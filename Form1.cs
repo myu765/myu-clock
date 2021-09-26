@@ -30,7 +30,9 @@ namespace WindowsFormsApp1
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime d = DateTime.Now; // 現在時刻を取得
-            label1.Text = string.Format("{0:00}:{1:00}:{2:00}", d.Hour, d.Minute, d.Second); // 0埋め2桁で表示
+            System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("en-US");
+            label1.Text = d.ToString("tt", ci) // AM PMを表示
+                        + string.Format(" {0:00}:{1:00}:{2:00}", d.Hour, d.Minute, d.Second); // 0埋め2桁で表示
             label1.Visible = true; // 時計を表示
         }
     }

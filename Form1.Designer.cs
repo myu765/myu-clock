@@ -40,12 +40,12 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(68, 76);
+            this.label1.Font = new System.Drawing.Font("ＭＳ ゴシック", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.Location = new System.Drawing.Point(18, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 48);
+            this.label1.Size = new System.Drawing.Size(284, 48);
             this.label1.TabIndex = 0;
-            this.label1.Text = "00:00:00";
+            this.label1.Text = "AM 00:00:00";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Visible = false;
             // 
