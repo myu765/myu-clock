@@ -22,6 +22,9 @@ namespace WindowsFormsApp1
             // フォームがメモリ上に読み込まれた時の処理
             timer1.Interval = 500; // 0.5秒に1回Tickメソッド実行
             timer1.Enabled = true; // タイマースタート
+            // クライアント領域を、320 x 200 に固定する
+            Size size = new Size(320, 200);
+            ClientSize = size;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
