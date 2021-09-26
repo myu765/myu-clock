@@ -34,6 +34,8 @@ namespace WindowsFormsApp1
             label1.Text = d.ToString("tt", ci) // AM PMを表示
                         + string.Format(" {0:00}:{1:00}:{2:00}", d.Hour, d.Minute, d.Second); // 0埋め2桁で表示
             label1.Visible = true; // 時計を表示
+            label2.Text = d.ToString("yyyy/MM/dd(ddd)"); // 2021/01/02(月) の形式で表示する
+            label2.Visible = true; // 年月日を表示
         }
     }
 }
