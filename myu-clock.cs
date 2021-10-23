@@ -20,11 +20,25 @@ namespace WindowsFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
             // フォームがメモリ上に読み込まれた時の処理
-            timer1.Interval = 250; // 0.5秒に1回Tickメソッド実行
+            timer1.Interval = 250; // 0.25秒に1回Tickメソッド実行
             timer1.Enabled = true; // タイマースタート
-            // クライアント領域を、320 x 180 に固定する
-            Size size = new Size(320, 180);
+            
+            // クライアント領域を変更する
+            //Size size = new Size(320, 180);
+            Size size = new Size(384, 108);
             ClientSize = size;
+
+            // 時刻の位置を調整する
+            int posLabel1_X = (ClientSize.Width - label1.Width) / 2;
+            int posLabel1_Y = ((ClientSize.Height - label1.Height) / 2) + (label2.Height / 2) + 4;
+            label1.Location = new Point(posLabel1_X, posLabel1_Y);
+
+            // 日付の位置を調整する
+            int posLabel2_X = (ClientSize.Width - label2.Width) / 2;
+            int posLabel2_Y = ((ClientSize.Height - label1.Height) / 2) - (label2.Height / 2) - 4;
+            label2.Location = new Point(posLabel2_X, posLabel2_Y);
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
